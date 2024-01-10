@@ -5,6 +5,7 @@
 
 import {Constructor} from '@loopback/context';
 import {
+  ChannelOptions,
   handleBidiStreamingCall,
   handleClientStreamingCall,
   handleServerStreamingCall,
@@ -49,6 +50,7 @@ export interface GrpcComponentConfig {
        */
       checkClientCertificate?: boolean;
     };
+    options?: ChannelOptions;
   };
   /**
    * Specify your own sequence to handle gRPC calls
