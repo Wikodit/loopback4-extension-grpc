@@ -4,13 +4,19 @@
 // License text available at https://opensource.org/licenses/MIT
 
 import {Provider} from '@loopback/context';
-import {Server} from 'grpc';
+import {Server} from '@grpc/grpc-js';
+import { GrpcComponentConfig } from '../types';
 
 /**
- * This provider will creates a GRPC Server
+ * This provider will creates a gRPC Server
  */
 export class ServerProvider implements Provider<Server> {
-  private server = new Server();
+  private server: Server;
+  constructor(
+    @inject(GrpcBindings.CONFIG) protected config: GrpcComponentConfig,
+  ){
+    this.server = new Server(config.server.options);
+  }
   public value(): Server {
     return this.server;
   }
