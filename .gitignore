@@ -6,10 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 *.DS_Store
 
-# Distribution Directories
-dist
-dist6
-
 # Runtime data
 pids
 *.pid
