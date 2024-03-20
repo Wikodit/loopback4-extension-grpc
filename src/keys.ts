@@ -4,9 +4,9 @@
 // License text available at https://opensource.org/licenses/MIT
 
 import {BindingKey, Context} from '@loopback/context';
-import {CoreBindings} from '@loopback/core';
 import {Server} from '@grpc/grpc-js';
 import {GrpcSequenceInterface} from './grpc.sequence';
+import { CoreBindings } from '@loopback/core';
 
 /**
  * Binding keys used by this component.

@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { ChannelCredentials, ChannelOptions, UntypedServiceImplementation, handleUnaryCall, handleClientStreamingCall, handleServerStreamingCall, handleBidiStreamingCall, Client, ClientUnaryCall, Metadata, CallOptions, ClientWritableStream, ClientReadableStream, ClientDuplexStream, ServiceError } from '@grpc/grpc-js';
 import _m0 from 'protobufjs/minimal';
 export declare const protobufPackage = "greeterpackage";

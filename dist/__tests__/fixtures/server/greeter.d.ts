@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { FileDescriptorProto } from 'ts-proto-descriptors';
 import _m0 from 'protobufjs/minimal';
 import { UntypedServiceImplementation, handleUnaryCall, handleClientStreamingCall, handleServerStreamingCall, handleBidiStreamingCall } from '@grpc/grpc-js';
